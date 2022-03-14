@@ -11,13 +11,13 @@ Cdate=time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())
 sqrid='209751'  #未知
 sqbmid='350'   #未知
 
-sqrmc='孙敏' #姓名
-gh='192210711223'#学号
+sqrmc='' #姓名
+gh=''#学号
 sqbmmc='计算机学院' #学院
-sfzh='320826200101302613'#身份证号
+sfzh=''#身份证号
 jgshen='江苏省' #省份
 jgshi='淮安市'#市
-lxdh='13852332553'#手机号
+lxdh=''#手机号
 
 
 
