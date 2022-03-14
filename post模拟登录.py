@@ -19,14 +19,15 @@ jgshen='江苏省' #省份
 jgshi='淮安市'#市
 lxdh=''#手机号
 
-
+username=''#学号
+password=''#密码(建议测试下再填入)
 
 tbrq=str(date)
 tjsj=str(Cdate)
 glqsrq="[\""+tbrq+"\",\""+tbrq+"\"]"
 
 
-
+#最终发送的数据包
 Fpayload ={"entity":{"sqrid":sqrid,"sqbmid":sqbmid,"rysf":"1","sqrmc":sqrmc,"gh":gh,"sqbmmc":sqbmmc,"sfzh":sfzh,"xb":"1","jgshen":jgshen,"jgshi":jgshi,"lxdh":lxdh,"tbrq":tbrq,"jrszd":"学校","jrstzk":"当日有发热咳嗽等疑似症状","sfjchwry":"否","sfyyqryjc":"否","sfyqgzdyqryjc":"否","sfjcysqzrq":"否","jrsfjgzgfxdq":"否","jgzgfxdq":"","sflz":"否","lzsj":"","lzjtgj":"","lzbc":"","sffz":"空","fhzjsj":"","fhzjgj":"","fhzjbc":"","fztztkdd":"","glqsrq": glqsrq,"sffr":"否","tw":"37","zwtw":"37","jrjzdxxdz":"江苏科技大学","bz":"","_ext":"{}","tjsj":tjsj}}
 
 s=requests.session() 
@@ -42,8 +43,7 @@ a=re.findall('"execution" value="(.*)"', execution.text)
 #print(a[0])
 cookies=execution.cookies
 #print(cookies)
-username='192210711223'
-password='Sunmin666'
+
 
 url = "http://ids2.just.edu.cn/cas/login?service=http%3A%2F%2Fmy.just.edu.cn%2F"
 
